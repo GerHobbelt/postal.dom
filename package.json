@@ -1,10 +1,14 @@
 {
   "name": "postal.dom",
-  "author": "Nicholas Cloud",
-  "description": "",
   "version": "0.0.1",
+  "author": "Nicholas Cloud",
+  "description": "binds a DOM event to a postal.js channel/topic for publication",
+  "keywords": ["postal", "dom", "messaging"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicholascloud/postal.dom"
+  },
   "dependencies": {
-
   },
   "devDependencies": {
     "jake": "0.5.10",
@@ -13,5 +17,10 @@
     "async": "0.2.6",
     "rimraf": "2.1.4",
     "strata": "0.20.0"
+  },
+  "main": "./build/postal.dom-0.0.1",
+  "scripts": {
+    "test": "jake test --trace",
+    "prepublish": "jake build"
   }
 }

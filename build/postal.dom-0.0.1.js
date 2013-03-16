@@ -35,8 +35,11 @@ define(['jquery', 'underscore', 'postal'], function ($, _, postal) {
    * @param {Object} e
    * @returns {{}}
    */
-  function extractMessageData (e) {
+  function extractDomData (e) {
     var data = {};
+    if (!e) {
+      return data;
+    }
     _.each(e.attributes, function (a) {
       var match = ATTR_PREFIX.exec(a.name);
       if (!match || match.length < 2) {
@@ -64,9 +67,9 @@ define(['jquery', 'underscore', 'postal'], function ($, _, postal) {
 
     this.el = $(selector);
     this.callback = function (e) {
-      var data = extractMessageData(e.target);
-      var publication = _.defaults({}, self.publication || {}, {
-        data: data
+      var domData = extractDomData(e.target);
+      var publication = _.defaults({}, self.publication, {
+        data: domData
       });
       postal.publish(publication);
     };
