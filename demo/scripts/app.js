@@ -16,7 +16,6 @@ define([
     topic: 'button.clicked',
     callback: function (data) {
       log.writeln(JSON.stringify(data));
-      postal.dom.off('#demo-button');
     }
   });
 
