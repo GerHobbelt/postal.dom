@@ -1,0 +1,17 @@
+{
+  "name": "postal.dom",
+  "author": "Nicholas Cloud",
+  "description": "",
+  "version": "0.0.1",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "jake": "0.5.10",
+    "mocha": "1.8.2",
+    "chai": "1.5.0",
+    "async": "0.2.6",
+    "rimraf": "2.1.4",
+    "strata": "0.20.0"
+  }
+}

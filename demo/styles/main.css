@@ -1,0 +1,44 @@
+body {
+  font-size: 16px;
+}
+
+#main-header {
+  position: absolute;
+  top: 0;
+  left: 1em;
+  right: 1em;
+  height: 4em;
+  padding: 0;
+  margin: 0;
+}
+
+#main-container {
+  position: absolute;
+  top: 4em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#main-container fieldset {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  right: 1em;
+  height: 48%;
+  padding: 0;
+  margin: 0;
+}
+
+#main-container #output {
+  position: absolute;
+  top: 52%;
+  left: 1em;
+  right: 1em;
+  bottom: 1em;
+  border: 1px solid #cccccc;
+  padding: 0 1em;
+  margin: 0;
+  overflow-y: scroll;
+  word-wrap: break-word;
+}
